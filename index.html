@@ -1,0 +1,107 @@
+
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+      body {
+        background-color: white;
+        margin: 0 auto;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      #bp-web-widget-container {
+        max-height: 90%;
+        width: 481px;
+        margin: auto;
+        flex-grow: 1;
+      }
+      #bp-web-widget-container div {
+        height: 100%;
+      }
+      .webchatIframe {
+        position: relative !important;
+      }
+    </style>
+    <title>TNTBOYKARTIK</title>
+  </head>
+  <body>
+<script>
+  (function () { 
+    const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
+    const host = window.location.host; 
+    const isMatch = !host.match(rgx); 
+ 
+    function showWarning() { 
+        let warning = document.createElement('h1'); 
+        warning.innerText = 'DON\'T STEAL'; 
+        warning.style.fontSize = '5em'; 
+        warning.style.fontWeight = 700; 
+        warning.style.position = 'fixed'; 
+        warning.style.left = `${(window.innerWidth/2)}px`; 
+        warning.style.top =`${ window.innerHeight /2}px`; 
+        warning.style.zIndex = 9999; 
+        document.body.appendChild(warning); 
+    } 
+ 
+    function exactRvg () { 
+        cornify_add(); 
+ 
+            window.setTimeout(()=> { 
+                exactRvg(); 
+            }, 500); 
+ 
+    } 
+    if (isMatch ) { 
+        showWarning(); 
+        $.getScript('https://www.cornify.com/js/cornify.js',function(){ 
+            exactRvg(); 
+        }); 
+    } 
+ 
+})(); 
+console._log = console.log 
+console.log = function (log) { 
+  return console._log(`%c ${log}`, 'color:rgba(255,255,255,0)'); 
+} 
+</script>
+  <script src="script.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat With TNTBOYKARTIK",
+      "botConversationDescription": "This is a Amazing Bot Created by TNTBOYKARTIK",
+      "botId": "be1c3540-5f6d-4ea8-bae8-cd82c1be9641",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "be1c3540-5f6d-4ea8-bae8-cd82c1be9641",
+      "webhookId": "3ef249ce-ef52-4708-bb18-603376d8fb7b",
+      "lazySocket": true,
+      "themeName": "prism",
+      "botName": "TNTBOYKARTIK",
+      "avatarUrl": "https://www.shutterstock.com/image-vector/cool-blue-tnt-simple-logo-600w-1129815905.jpg",
+      "emailAddress": "tntboykartik@gmail.com",
+      "website": "https://tntboykartik.netlify.app",
+      "frontendVersion": "v1",
+      "useSessionStorage": true,
+      "showBotInfoPage": true,
+      "enableConversationDeletion": true,
+      "showPoweredBy": true,
+      "theme": "prism",
+      "themeColor": "#2563eb",
+      "hideWidget": true,
+      "disableAnimations": true,
+      "closeOnEscape": false,
+      "showConversationsButton": false,
+      "enableTranscriptDownload": false,
+      "className": "webchatIframe",
+      "containerWidth": "100%25",
+      "layoutWidth": "100%25",
+      "showCloseButton": false
+  });
+window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+</script>
+
+  </body>
+</html>
